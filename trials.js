@@ -191,6 +191,13 @@ function returnAddress(name) {
 returnAddress('Barbara Brown');
 // Add a function to create an employee schedule for the week 
 
+function makeSchedule(employees) {
+    let schedule = []
+    for (let i=1; i < 8; i++) {
+        schedule.add(employees[Math.floor(Math.random(employees.length))]);
+    }
+    console.log(schedule);
+}
 
 // Add a function for weekly hours
 
